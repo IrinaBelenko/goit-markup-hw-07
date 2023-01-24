@@ -1,0 +1,51 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+  .list-contacts {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 426px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 765px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1158px;
+  }
+}
+
+.top-header{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-menu-open{
+   background-color: transparent; 
+   border: none;
+   padding: 0;
+   line-height: 0;
+}
