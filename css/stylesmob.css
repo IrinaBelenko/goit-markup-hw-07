@@ -25,12 +25,6 @@ body {
   margin: 0;
 }
 
-.list-indent {
-  column-gap: 24px;
-  row-gap: 48px;
-  display: flex;
-}
-
 .link {
   text-decoration: none;
 }
@@ -54,6 +48,19 @@ img {
 }
 
 /*components */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -81,19 +88,6 @@ img {
   font-size: 16px;
   line-height: 1.5;
   color: var(--slate);
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 /*old new*/
@@ -186,6 +180,15 @@ img {
   background: var(--ocean);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+/*feature*/
+.section-feature {
+  padding-top: 96px;
+}
+
+.feature-item {
+  width: 396px;
 }
 
 /*прпар*/
@@ -347,7 +350,7 @@ img {
 /*tablet*/
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 766px;
   }
   .mobile-menu-window {
     display: none;
@@ -431,6 +434,20 @@ img {
     font-size: 56px;
     line-height: 1.07;
   }
+
+  /*feature*/
+    .list-indent {
+      flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 78px;
+    /*display: flex;*/
+  }
+  .feature-item {
+    width: 356px;
+    flex-basis: calc((100% - 48px) / 2);
+  }
+
+
 }
 
 /*desktop*/
@@ -462,6 +479,42 @@ img {
   }
   .hero-title {
     margin-bottom: 48px;
+  }
+
+  /*feature*/
+  .section-feature {
+    padding-top: 120px;
+  }
+
+  .list-indent {
+    row-gap: 48px;
+  }
+  .feature-item {
+    width: 264px;
+  }
+
+  .feature-item::before {
+    display: block;
+    content: "";
+    height: 112px;
+    background-size: 64px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--cloud);
+    margin-bottom: 8px;
+  }
+
+  .icon-antenna::before {
+    background-image: url(../images/icons/antenna.svg);
+  }
+  .icon-clock::before {
+    background-image: url(../images/icons/clock.svg);
+  }
+  .icon-diagram::before {
+    background-image: url(../images/icons/diagram.svg);
+  }
+  .icon-astronaut::before {
+    background-image: url(../images/icons/astronaut.svg);
   }
 }
 
