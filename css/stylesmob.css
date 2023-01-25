@@ -193,6 +193,10 @@ img {
   width: 396px;
 }
 
+ /*What are we doing*/
+  .section-our-works {
+    display: none;
+  }
 /*прпар*/
 .social-list {
   display: flex;
@@ -341,8 +345,8 @@ img {
   }
   /*feature*/
   .feature-item:not(:last-child) {
-  margin-bottom: 72px;
-}
+    margin-bottom: 72px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -453,6 +457,7 @@ img {
     width: 356px;
     flex-basis: calc((100% - 48px) / 2);
   }
+ 
 }
 
 /*desktop*/
@@ -537,6 +542,13 @@ img {
   }
   .icon-astronaut::before {
     background-image: url(../images/icons/astronaut.svg);
+  }
+
+  /*What are we doing*/
+  .section-our-works {
+    display: block;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 
