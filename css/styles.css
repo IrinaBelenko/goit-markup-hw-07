@@ -1,12 +1,12 @@
 /*variables*/
 :root {
-  --dark-text-color: #434455;
+  --slate: #434455;
   --light-text-color: #ffffff;
-  --dark-header-color: #2e2f42;
-  --hover-link-color: #4d5ae5;
-  --focus-button-color: #404bbf;
-  --footer-text-color: #e7e9fc;
-  --logo-bottom-color: #f4f4fd;
+  --navy-blue: #2e2f42;
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
   --light-slate: #8e8f99;
   --green: #31d0aa;
   --transition-timing: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -63,7 +63,7 @@ button {
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
-  color: var(--dark-header-color);
+  color: var(--navy-blue);
   margin-bottom: 72px;
 }
 
@@ -71,14 +71,14 @@ button {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: var(--dark-header-color);
+  color: var(--navy-blue);
   margin-bottom: 8px;
 }
 
 .text-description {
   font-size: 16px;
   line-height: 1.5;
-  color: var(--dark-text-color);
+  color: var(--slate);
 }
 
 .visually-hidden {
@@ -96,7 +96,7 @@ button {
 /*header*/
 .top-header {
   background: var(--light-text-color);
-  border-bottom: 1px solid var(--footer-text-color);
+  border-bottom: 1px solid var(--cornflower);
 }
 
 .header-container {
@@ -123,12 +123,12 @@ button {
 
 .web-top {
   line-height: 1.33;
-  color: var(--hover-link-color);
+  color: var(--iris);
 }
 
 .studio-top {
   line-height: 1.33;
-  color: var(--dark-header-color);
+  color: var(--navy-blue);
 }
 
 .menu {
@@ -144,7 +144,7 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color: var(--dark-header-color);
+  color: var(--navy-blue);
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -153,16 +153,16 @@ button {
 
 .menu-link:hover,
 .menu-link:focus {
-  color: var(--focus-button-color);
+  color: var(--ocean);
 }
 
 .active-menu {
   position: relative;
-  color: var(--focus-button-color);
+  color: var(--ocean);
 }
 .active-menu::after {
   content: "";
-  background: var(--focus-button-color);
+  background: var(--ocean);
   border-radius: 2px;
   display: block;
   width: 100%;
@@ -186,7 +186,7 @@ button {
 .phone-number {
   font-size: 16px;
   line-height: 1.5;
-  color: var(--dark-text-color);
+  color: var(--slate);
   padding-top: 24px;
   padding-bottom: 24px;
   display: block;
@@ -196,12 +196,12 @@ button {
 .email:focus,
 .phone-number:hover,
 .phone-number:focus {
-  color: var(--hover-link-color);
+  color: var(--iris);
 }
 
 /*hero*/
 .hero {
-  background: var(--dark-header-color);
+  background: var(--navy-blue);
   text-align: center;
   padding-bottom: 188px;
   padding-top: 188px;
@@ -213,7 +213,7 @@ button {
   max-width: 1440рх;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: var(--dark-header-color);
+  background-color: var(--navy-blue);
 }
 
 .hero-title {
@@ -235,7 +235,7 @@ button {
   padding: 16px 32px;
   letter-spacing: 0.04em;
   color: var(--light-text-color);
-  background: var(--hover-link-color);
+  background: var(--iris);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
@@ -245,7 +245,7 @@ button {
 
 .modal-button:hover,
 .modal-button:focus {
-  background: var(--focus-button-color);
+  background: var(--ocean);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -265,7 +265,7 @@ button {
   background-size: 64px;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: var(--logo-bottom-color);
+  background-color: var(--cloud);
   margin-bottom: 8px;
 }
 .icon-antenna::before {
@@ -288,7 +288,7 @@ button {
 
 /*Our Team*/
 .section-our-team {
-  background: var(--logo-bottom-color);
+  background: var(--cloud);
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -322,13 +322,13 @@ button {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: var(--hover-link-color);
+  background-color: var(--iris);
   transition: background-color var(--transition-timing);
 }
 
 .social-list-link:hover,
 .social-list-link:focus {
-  background-color: var(--focus-button-color);
+  background-color: var(--ocean);
 }
 .social-list-icon {
   fill: var(--light-text-color);
@@ -336,7 +336,7 @@ button {
 }
 .social-list-icon:hover,
 .social-list-icon:focus {
-  fill: var(--logo-bottom-color);
+  fill: var(--cloud);
 }
 /*Customers*/
 .section-customers {
@@ -363,13 +363,13 @@ button {
 }
 .customer-list-link:hover,
 .customer-list-link:focus {
-  border: 1px solid var(--focus-button-color);
-  color: var(--focus-button-color);
+  border: 1px solid var(--ocean);
+  color: var(--ocean);
 }
 
 /*footer*/
 .footer {
-  background: var(--dark-header-color);
+  background: var(--navy-blue);
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -380,7 +380,7 @@ button {
 .text-footer {
   font-size: 16px;
   line-height: 1.5;
-  color: var(--footer-text-color);
+  color: var(--cornflower);
   margin-top: 16px;
   width: 264px;
 }
@@ -398,12 +398,12 @@ button {
 }
 .web-bottom {
   line-height: 1.17;
-  color: var(--hover-link-color);
+  color: var(--iris);
 }
 
 .studio-bottom {
   line-height: 1.17;
-  color: var(--logo-bottom-color);
+  color: var(--cloud);
 }
 /*footer social*/
 .social-title {
@@ -445,7 +445,7 @@ button {
 
 .footer-list-icon:hover,
 .footer-list-icon:focus {
-  fill: var(--logo-bottom-color);
+  fill: var(--cloud);
 }
 /*footer subscription*/
 .subscription-form {
@@ -466,7 +466,7 @@ button {
   margin-right: 24px;
 }
 .subscription-form-input {
-  background-color: var(--dark-header-color);
+  background-color: var(--navy-blue);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -518,8 +518,8 @@ button {
 }
 .filter-button {
   font-family: "Roboto", sans-serif;
-  background: var(--logo-bottom-color);
-  border: 1px solid var(--footer-text-color);
+  background: var(--cloud);
+  border: 1px solid var(--cornflower);
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
@@ -527,7 +527,7 @@ button {
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
-  color: var(--hover-link-color);
+  color: var(--iris);
   padding: 12px 24px;
   transition: color var(--transition-timing),
     background var(--transition-timing);
@@ -535,7 +535,7 @@ button {
 .filter-button:hover,
 .filter-button:focus {
   color: var(--light-text-color);
-  background: var(--focus-button-color);
+  background: var(--ocean);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -565,8 +565,8 @@ button {
 .overlay {
   font-size: 16px;
   line-height: 1.5;
-  color: var(--logo-bottom-color);
-  background: var(--hover-link-color);
+  color: var(--cloud);
+  background: var(--iris);
   padding: 40px 32px;
 
   position: absolute;
@@ -588,7 +588,7 @@ button {
   padding-bottom: 32px;
   padding-left: 16px;
   background: var(--light-text-color);
-  border: 1px solid var(--footer-text-color);
+  border: 1px solid var(--cornflower);
   border-top: none;
 }
 
@@ -628,7 +628,7 @@ button {
   padding: 72px 24px 24px;
 }
 .modal-close-btn {
-  background: var(--footer-text-color);
+  background: var(--cornflower);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   padding: 0;
@@ -643,7 +643,7 @@ button {
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-  background: var(--focus-button-color);
+  background: var(--ocean);
 }
 
 .modal-close-btn:hover .modal-close-btn-icon,
@@ -657,7 +657,7 @@ button {
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: var(--dark-header-color);
+  color: var(--navy-blue);
 }
 .modal-form {
   display: flex;
@@ -688,18 +688,18 @@ button {
 }
 .modal-form-input:focus {
   outline: none;
-  border-color: var(--hover-link-color);
+  border-color: var(--iris);
 }
 .modal-form-input-icon {
   position: absolute;
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  fill: var(--dark-header-color);
+  fill: var(--navy-blue);
   transition: fill var(--transition-timing);
 }
 .modal-form-input:focus + .modal-form-input-icon {
-  fill: var(--hover-link-color);
+  fill: var(--iris);
 }
 .modal-form-comment {
   resize: none;
@@ -711,7 +711,7 @@ button {
 }
 .modal-form-comment:focus {
   outline: none;
-  border-color: var(--hover-link-color);
+  border-color: var(--iris);
 }
 .modal-form-comment::placeholder {
   font-size: 12px;
