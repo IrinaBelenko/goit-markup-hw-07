@@ -77,6 +77,20 @@ img {
 }
 
 .text-header-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--navy-blue);
+  margin-bottom: 8px;
+}
+
+.text-description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--slate);
+}
+
+.feature-header-subtitle {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -84,14 +98,12 @@ img {
   margin-bottom: 8px;
 }
 
-.text-description {
+.feature-description {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   color: var(--slate);
 }
-
-/*old new*/
 
 /*everywhere*/
 
@@ -187,17 +199,37 @@ img {
 /*feature*/
 .section-feature {
   padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .feature-item {
   width: 396px;
 }
 
- /*What are we doing*/
-  .section-our-works {
-    display: none;
-  }
-/*прпар*/
+/*What are we doing*/
+.section-our-works {
+  display: none;
+}
+
+/*Our Team*/
+.section-our-team {
+  background: var(--cloud);
+  padding-top: 96px;
+  padding-bottom: 128px;
+}
+
+.our-team-item {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.our-team-description {
+  padding: 32px 16px;
+  text-align: center;
+  background: var(--light-text-color);
+}
+
 .social-list {
   display: flex;
   justify-content: center;
@@ -347,6 +379,19 @@ img {
   .feature-item:not(:last-child) {
     margin-bottom: 72px;
   }
+
+  /*Our Team*/
+  .section-our-team {
+    padding-bottom: 104px;
+  }
+
+  .section-our-team .list-indent {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -357,7 +402,8 @@ img {
   }
 }
 
-/*tablet*/
+/*tablet
+768px + */
 @media screen and (min-width: 768px) {
   .container {
     width: 766px;
@@ -457,7 +503,15 @@ img {
     width: 356px;
     flex-basis: calc((100% - 48px) / 2);
   }
- 
+  /*Our Team*/
+  .section-our-team {
+    padding-bottom: 104px;
+  }
+
+  .section-our-team .list-indent {
+    row-gap: 64px;
+    justify-content: center;
+  }
 }
 
 /*desktop*/
@@ -494,6 +548,7 @@ img {
   /*feature*/
   .section-feature {
     padding-top: 120px;
+    padding-bottom: 0;
   }
 
   .list-indent {
@@ -506,7 +561,7 @@ img {
     /*calc((100% - 48px) / 4);*/
   }
 
-  .text-header-subtitle {
+  .feature-header-subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -514,7 +569,7 @@ img {
     margin-bottom: 8px;
   }
 
-  .text-description {
+  .feature-description {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -547,6 +602,12 @@ img {
   /*What are we doing*/
   .section-our-works {
     display: block;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  /*Our Team*/
+  .section-our-team {
     padding-top: 120px;
     padding-bottom: 120px;
   }
