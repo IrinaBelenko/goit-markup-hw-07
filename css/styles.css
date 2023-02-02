@@ -312,7 +312,6 @@ img {
   font-size: 18px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
   display: block;
 }
 .web-bottom {
@@ -446,7 +445,6 @@ img {
 
 .modal {
   width: 408px;
-  height: 600px;
   max-height: 90vh;
   overflow-y: scroll;
   background-color: #fcfcfc;
@@ -749,6 +747,9 @@ img {
     flex-direction: column;
     align-items: center;
   }
+  .subscription-form-field {
+    margin-right: 0px;
+  }
   .subscription-block {
     width: 100%;
   }
@@ -763,8 +764,19 @@ img {
     margin-bottom: 16px;
   }
 
+  .subscription-form-label {
+    transform: translateY(calc(-50% - 8px));
+  }
+  .subscription-form-input:focus + .subscription-form-label,
+  .subscription-form-input:not(:placeholder-shown) + .subscription-form-label {
+    transform: translate(-16px, -48px);
+  }
+
   .modal {
     width: calc(100% - 30px);
+  }
+  .modal-form-check-desc {
+    font-size: 9px;
   }
 }
 
@@ -806,7 +818,7 @@ img {
     color: var(--navy-blue);
     display: block;
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 22px;
     transition: color var(--transition-timing);
   }
 
@@ -829,7 +841,7 @@ img {
     height: 4px;
     position: absolute;
     left: 0px;
-    bottom: 0px;
+    bottom: -1px;
   }
 
   /*contacts*/
@@ -922,6 +934,10 @@ img {
     width: 1158px;
   }
 
+  .menu-link {
+    padding-bottom: 28px;
+  }
+
   .list-contacts {
     display: flex;
   }
@@ -942,6 +958,8 @@ img {
     text-align: center;
     padding-bottom: 188px;
     padding-top: 188px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
   .hero-title {
     margin-bottom: 48px;
@@ -1044,7 +1062,6 @@ img {
   screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
-    max-width: 428рх;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -1056,7 +1073,6 @@ img {
 /*tablet 1x*/
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768рх;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -1069,7 +1085,6 @@ img {
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    max-width: 768рх;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
